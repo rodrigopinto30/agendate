@@ -1,0 +1,28 @@
+<div class="contenedorTabla">
+  <table>
+    <thead>
+      <tr>
+        <th>N.</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Telefono</th>
+        <th>Operacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each contacto}}
+        <tr>
+          <td>{{@index}}</td>
+          <td>{{name}}</td>
+          <td>{{lastName}}</td>
+          <td>{{phone}}</td>
+          <td>
+            <a href="/edit/{{_id}}" class="btn btn-info">Modificar</a>
+            <a href="/delete/{{_id}}" class="btn btn-danger">Eliminar</a>
+          </td>
+        </tr>
+
+      {{/each}}
+    </tbody>
+  </table>
+</div>

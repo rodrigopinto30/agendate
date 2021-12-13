@@ -1,0 +1,21 @@
+<form action="/edit/{{contact._id}}" method="POST">
+  <input
+    type="text"
+    name="name"
+    placeholder="Nombre"
+    value="{{contact.name}}"
+  />
+  <input
+    type="text"
+    name="lastName"
+    placeholder="Apellido"
+    value="{{contact.lastName}}"
+  />
+  <input
+    type="text"
+    name="phone"
+    placeholder="Numero de celular"
+    value="{{contact.phone}}"
+  />
+  <button>Aceptar</button>
+</form>
